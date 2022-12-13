@@ -1,0 +1,72 @@
+[
+	{
+		"name": "Base Apparel coming soon page",
+		"repo": "https://github.com/cosmoart/Base-Apparel-coming-soon-page-solution",
+		"live": "https://cosmoart.github.io/Base-Apparel-coming-soon-page-solution/",
+		"description": "This is a solution to the Base Apparel coming soon page challenge on Frontend Mentor",
+		"techs": ["HTML", "CSS", "JavaScript"],
+		"tags": ["Landing Page", "Frontend Mentor challenge"],
+		"image": "https://raw.githubusercontent.com/cosmoart/single-price-grid-component-master/master/images/preview.png"
+	},
+	{
+		"name": "IP address tracker",
+		"repo": "https://github.com/cosmoart/IP-address-tracker",
+		"live": "https://ip-trackerr.vercel.app",
+		"description": "A website to track and obtain information based on an IP address or a domain",
+		"tech": [
+			"CSS",
+			"JavaScript",
+			"Styled components",
+			"React",
+			"LeafletJS",
+			"Axios"
+		],
+		"tags": ["Frontend Mentor challenge"],
+		"image": "https://raw.githubusercontent.com/cosmoart/four-card-feature-section-master/master/images/preview.png"
+	},
+	{
+		"name": "Testimonials grid section",
+		"repo": "https://github.com/cosmoart/Testimonials-grid-section-solution",
+		"live": "https://cosmoart.github.io/Testimonials-grid-section-solution/",
+		"description": "This is a solution to the Testimonials grid section challenge on Frontend Mentor",
+		"techs": ["HTML", "CSS"],
+		"tags": ["Component", "Frontend Mentor challenge"],
+		"image": "https://raw.githubusercontent.com/cosmoart/Testimonials-grid-section-solution/master/images/preview.png"
+	},
+	{
+		"name": "Space tourism",
+		"repo": "https://github.com/cosmoart/Space-tourism",
+		"live": "https://space-tourist.vercel.app",
+		"description": "A website to learn about space tourism",
+		"tech": ["CSS", "JavaScript", "NextJS", "React"],
+		"tags": ["Frontend Mentor challenge"],
+		"image": "https://raw.githubusercontent.com/cosmoart/Space-tourism/master/images/preview.png"
+	},
+	{
+		"name": "Easybank",
+		"repo": "https://github.com/cosmoart/Easybank-landing-page",
+		"live": "https://eeasybank.vercel.app",
+		"description": "A landing page to practice Tailwind, React and responsive",
+		"tech": ["React", "Tailwind"],
+		"tags": ["Landing Page", "Frontend Mentor challenge"],
+		"image": "https://raw.githubusercontent.com/cosmoart/Easybank-landing-page/master/images/preview.png"
+	},
+	{
+		"name": "Interactive card details form",
+		"repo": "https://github.com/cosmoart/Interactive-card-details-form",
+		"live": "https://interactive-card-details-form.vercel.app",
+		"description": "A practice of forms and animations made with JS and CSS in React",
+		"tech": ["React", "CSS", "JavaScript"],
+		"tags": ["Frontend Mentor challenge"],
+		"image": "https://raw.githubusercontent.com/cosmoart/Interactive-card-details-form/master/images/preview.png"
+	},
+	{
+		"name": "Where in the World",
+		"repo": "https://github.com/cosmoart/Where-in-the-world",
+		"live": "https://where-world.vercel.app",
+		"description": "A website to learn about countries",
+		"tech": ["JavaScript", "Tailwind", "React"],
+		"tags": ["Frontend Mentor challenge"],
+		"image": "https://raw.githubusercontent.com/cosmoart/Where-in-the-world/master/images/preview.png"
+	}
+]
