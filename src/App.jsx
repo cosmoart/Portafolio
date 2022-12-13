@@ -4,7 +4,7 @@ import Skills from './components/Skills'
 import Proyects from './components/Proyects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import './styles/App.css'
+// import './styles/App.css'
 
 function App() {
 
@@ -13,8 +13,8 @@ function App() {
       <Navbar />
       <Home />
       <Skills />
-      <Contact />
       <Proyects />
+      <Contact />
       <Footer />
     </div>
   )

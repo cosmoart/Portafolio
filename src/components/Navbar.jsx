@@ -1,6 +1,6 @@
 export default function Navbar() {
 	return (
-		<header>
+		<header className="bg-red-600">
 			<nav>
 				<h1>Navbar</h1>
 				<ul>
