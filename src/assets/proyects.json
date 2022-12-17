@@ -1,14 +1,5 @@
 [
 	{
-		"name": "Base Apparel coming soon page",
-		"repo": "https://github.com/cosmoart/Base-Apparel-coming-soon-page-solution",
-		"live": "https://cosmoart.github.io/Base-Apparel-coming-soon-page-solution/",
-		"description": "This is a solution to the Base Apparel coming soon page challenge on Frontend Mentor",
-		"techs": ["HTML", "CSS", "JavaScript"],
-		"tags": ["Landing Page", "Frontend Mentor challenge"],
-		"image": "https://raw.githubusercontent.com/cosmoart/single-price-grid-component-master/master/images/preview.png"
-	},
-	{
 		"name": "IP address tracker",
 		"repo": "https://github.com/cosmoart/IP-address-tracker",
 		"live": "https://ip-trackerr.vercel.app",
@@ -23,15 +14,6 @@
 		],
 		"tags": ["Frontend Mentor challenge"],
 		"image": "https://raw.githubusercontent.com/cosmoart/four-card-feature-section-master/master/images/preview.png"
-	},
-	{
-		"name": "Testimonials grid section",
-		"repo": "https://github.com/cosmoart/Testimonials-grid-section-solution",
-		"live": "https://cosmoart.github.io/Testimonials-grid-section-solution/",
-		"description": "This is a solution to the Testimonials grid section challenge on Frontend Mentor",
-		"techs": ["HTML", "CSS"],
-		"tags": ["Component", "Frontend Mentor challenge"],
-		"image": "https://raw.githubusercontent.com/cosmoart/Testimonials-grid-section-solution/master/images/preview.png"
 	},
 	{
 		"name": "Space tourism",

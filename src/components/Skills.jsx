@@ -1,7 +1,7 @@
 export default function Skills() {
 	return (
-		<section className="bg-slate-800 min-h-screen">
-			<h2 id='skills' className="subtitle">Skills</h2>
+		<section id='skills' className="section bg-slate-800 min-h-screen">
+			<h2 className="subtitle">Skills</h2>
 			<p>HTML</p>
 			<p>CSS</p>
 			<p>JavaScript</p>

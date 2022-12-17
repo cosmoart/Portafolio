@@ -4,13 +4,14 @@ export default function Footer() {
 	const color = useRef(null)
 
 	useEffect(() => {
+		document.body.style.setProperty("--mainColor", color.current.value)
 		color.current.addEventListener("input", () =>
-			document.documentElement.style.setProperty("--mainColor", color.current.value)
+			document.body.style.setProperty("--mainColor", color.current.value)
 		);
 	}, [])
 
 	return (
-		<footer className='p-5 bg-gray-400'>
+		<footer className='p-5 bg-gray-600 relative'>
 			<ul className='columns-2'>
 				<li><a href="https://github.com/cosmoart" target="_blank" rel="noopener noreferrer">Github</a></li>
 				<li><a href="https://twitter.com/CosmoArt0" target="_blank" rel="noopener noreferrer">Twitter</a></li>
@@ -19,7 +20,7 @@ export default function Footer() {
 				<li><a href="https://discord.com/users/734087835472232559" target="_blank" rel="noopener noreferrer">Discord</a></li>
 			</ul>
 			<a href="https://github.com/cosmoart/Portafolio" target="_blank" rel="noopener noreferrer">Repo</a>
-			<input type="color" name="" ref={color} value="#5824d1" className=""></input>
+			<input type="color" name="" ref={color} defaultValue="#5824d1" className="w-full absolute top-0 left-0 h-2"></input>
 		</footer>
 	)
 }

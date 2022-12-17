@@ -1,7 +1,7 @@
 export default function Contact() {
 	return (
-		<section className='min-h-screen bg-green-500'>
-			<h2 id='contact' className="subtitle">Contact</h2>
+		<section id='contact' className='section min-h-screen bg-green-500'>
+			<h2 className="subtitle">Contact</h2>
 			<form className='flex flex-col max-w-xl mx-auto'>
 				<label htmlFor="email">Email</label>
 				<input type="email" name="email" id="email" />

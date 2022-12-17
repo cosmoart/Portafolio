@@ -3,11 +3,11 @@ import proyects from '../assets/proyects.json'
 
 export default function Proyects() {
 	useEffect(() => {
-		console.log(proyects)
+		// console.log(proyects)
 	}, [])
 	return (
-		<section className='min-h-screen bg-cyan-700 flex'>
-			<h2 id='proyects' className="subtitle">Proyects</h2>
+		<section id='proyects' className='section min-h-screen bg-cyan-700 flex'>
+			<h2 className="subtitle">Proyects</h2>
 			{
 				proyects.map((proyect, index) => (
 					<div key={index} className="border-red-500 border">
