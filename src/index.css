@@ -6,6 +6,9 @@
 	.subtitle {
 		@apply text-2xl font-bold text-center;
 	}
+	.absolute-center {
+		@apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+	}
 }
 
 html {
@@ -36,17 +39,17 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: white;
+	background: #1f2937;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	border-radius: 10px;
-	border: 3px solid white;
-	background: linear-gradient(to bottom, violet, purple);
+	border: 3px solid #1f2937;
+	background: var(--mainColor);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: rgb(146, 146, 146);
+	background: rgb(255, 255, 255);
 }

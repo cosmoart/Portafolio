@@ -4,13 +4,13 @@ export default function About() {
 	const { t } = useTranslation();
 
 	return (
-		<section id='about' className="section min-h-screen bg-purple-400">
-			<h2 className="subtitle">{t("about.title")}</h2>
-			<p>
-				I am a web developer with a passion for learning new technologies and
-				creating new things. I am currently learning Nextjs and I am looking for
-				opportunities to work with it.
-			</p>
+		<section id='about' className="section grid place-items-center p-4 min-h-screen bg-cover bg-[url(https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)]">
+			<div className='max-w-3xl backdrop-blur-md p-4'>
+				<h2 className="subtitle">{t("about.title")}</h2>
+				<p>
+					{t("about.description")}
+				</p>
+			</div>
 		</section>
 	)
 }

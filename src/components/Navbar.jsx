@@ -34,26 +34,26 @@ export default function Navbar() {
 	}, [])
 
 	return (
-		<header className={`bg-gray-600 w-full bg-opacity-50 backdrop-blur-sm fixed top-0 transition-transform translate-y-0 shadow-sm ${!showNavBar && "-translate-y-20"}`} ref={navBar}>
+		<header className={`w-full z-40 bg-opacity-50 backdrop-blur-sm fixed top-0 transition-transform translate-y-0 shadow-sm ${!showNavBar && "-translate-y-20"}`} ref={navBar}>
 			<nav>
-				<ul className="flex gap-9 p-3 justify-center items-center">
-					<li>
-						<a href="/#about" className="uppercase font-bold text-[15px]">{t("navBar.about")}</a>
+				<ul className="flex gap-9 p-2 justify-center items-center text-sm pl-12">
+					<li className='text-center'>
+						<a href="/#about" className="uppercase font-bold">{t("navBar.about")}</a>
+					</li>
+					<li className='text-center'>
+						<a href="/#skills" className="uppercase font-bold">{t("navBar.skills")}</a>
 					</li>
 					<li>
-						<a href="/#skills" className="uppercase font-bold text-[15px]">{t("navBar.skills")}</a>
+						<button onClick={() => window.scrollTo(0, 0)}><img src={Logo} alt="Logo" className='w-9' /></button>
 					</li>
-					<li>
-						<button onClick={() => window.scrollTo(0, 0)}><img src={Logo} alt="Logo" className='w-10' /></button>
+					<li className='text-center'>
+						<a href="/#projects" className="uppercase font-bold" >{t("navBar.projects")}</a>
 					</li>
-					<li>
-						<a href="/#projects" className="uppercase font-bold text-[15px]" >{t("navBar.projects")}</a>
-					</li>
-					<li>
-						<a href="/#contact" className="uppercase font-bold text-[15px]">{t("navBar.contact")}</a>
+					<li className='text-center'>
+						<a href="/#contact" className="uppercase font-bold">{t("navBar.contact")}</a>
 					</li>
 				</ul>
-				<div className='absolute right-0 top-1/2 flex gap-2'>
+				<div className='absolute right-4 top-1/2 -translate-y-1/2 flex gap-2 text-sm'>
 					<button key={'es'} style={{ fontWeight: i18n.resolvedLanguage === 'es' ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage('es')}>
 						{'ESP'}
 					</button>
@@ -61,6 +61,7 @@ export default function Navbar() {
 						{'ENG'}
 					</button>
 				</div>
+				<div className='w-1 h-6 bg-red-500 absolute top-0 left-1/2 -translate-x-1/2 z-20'></div>
 			</nav>
 		</header>
 	)
