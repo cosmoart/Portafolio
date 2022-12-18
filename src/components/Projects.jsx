@@ -1,13 +1,11 @@
-import { useEffect } from 'react'
-import proyects from '../assets/proyects.json'
+import proyects from '../assets/projects.json'
+import { useTranslation } from 'react-i18next';
 
 export default function Proyects() {
-	useEffect(() => {
-		// console.log(proyects)
-	}, [])
+	const { t } = useTranslation();
 	return (
-		<section id='proyects' className='section min-h-screen bg-cyan-700 flex'>
-			<h2 className="subtitle">Proyects</h2>
+		<section id='projects' className='section min-h-screen bg-cyan-700 flex'>
+			<h2 className="subtitle">{t("projects.title")}</h2>
 			{
 				proyects.map((proyect, index) => (
 					<div key={index} className="border-red-500 border">
