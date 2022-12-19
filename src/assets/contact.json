@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Github",
+		"link": "https://github.com/cosmoart",
+		"color": "#181717"
+	},
+	{
+		"name": "Twitter",
+		"link": "https://twitter.com/CosmoArt0",
+		"color": "#1DA1F2"
+	},
+	{
+		"name": "Gmail",
+		"link": "mailto:cosmohydra17@gmail.com",
+		"color": "#EA4335"
+	},
+	{
+		"name": "Discord",
+		"link": "https://discord.com/users/734087835472232559",
+		"color": "#5865F2"
+	}
+]

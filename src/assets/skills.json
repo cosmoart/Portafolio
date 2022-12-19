@@ -1,0 +1,46 @@
+[
+	{
+		"name": "HTML",
+		"color": "#E34F26"
+	},
+	{
+		"name": "CSS",
+		"color": "#1572B6"
+	},
+	{
+		"name": "JavaScript",
+		"color": "#F7DF1E"
+	},
+	{
+		"name": "Git",
+		"color": "#F05032"
+	},
+	{
+		"name": "React",
+		"color": "#61DAFB"
+	},
+	{
+		"name": "Nextjs",
+		"color": "#000000"
+	},
+	{
+		"name": "Node",
+		"color": "#339933"
+	},
+	{
+		"name": "Express",
+		"color": "#000000"
+	},
+	{
+		"name": "Figma",
+		"color": "#F24E1E"
+	},
+	{
+		"name": "Bootstrap",
+		"color": "#7952B3"
+	},
+	{
+		"name": "Tailwind",
+		"color": "#06B6D4"
+	}
+]

@@ -1,4 +1,4 @@
-import Logo from "../assets/images/logo_cosmo.svg"
+import Logo from "../assets/logo_cosmo.svg"
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 

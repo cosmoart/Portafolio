@@ -13,7 +13,7 @@ export default function Footer() {
 	}, [])
 
 	return (
-		<footer className='p-5 bg-gray-600 relative'>
+		<footer className='p-5 bg-gray-800 relative'>
 			<ul className='columns-2'>
 				<li><a href="https://github.com/cosmoart" target="_blank" rel="noopener noreferrer">Github</a></li>
 				<li><a href="https://twitter.com/CosmoArt0" target="_blank" rel="noopener noreferrer">Twitter</a></li>
