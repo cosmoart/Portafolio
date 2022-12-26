@@ -4,11 +4,42 @@
 
 @layer components {
 	.subtitle {
-		@apply text-2xl font-bold text-center;
+		@apply text-3xl m-3 font-bold text-center;
 	}
 	.absolute-center {
 		@apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
 	}
+}
+
+main {
+	background: #12163b !important;
+	position: relative;
+	overflow: hidden;
+}
+main::after,
+main::before {
+	content: '';
+	position: absolute;
+	z-index: 10;
+	width: 200vw;
+	height: 200px;
+	background: url('/wave.svg') no-repeat center center fixed;
+	background-size: cover;
+}
+main::after {
+	transform: rotate(40deg) translate(9rem, 9rem) scaleY(0.5);
+}
+main::before {
+	transform: rotate(220deg) translate(9rem, 9rem) scaleY(0.5);
+}
+
+.bg-main {
+	content: '';
+	position: absolute;
+	width: 150vw;
+	height: 385px;
+	background: white;
+	transform: rotate(40deg);
 }
 
 html {

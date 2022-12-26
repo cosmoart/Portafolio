@@ -21,7 +21,7 @@ export default i18n.use(LanguageDetector).use(initReactI18next)
 					about: {
 						title: 'About me',
 						description: `I am a web programmer with experience developing web applications and websites. I specialize in using technologies like HTML, CSS, JavaScript, and PHP to create engaging and functional online experiences. I also have knowledge of JavaScript frameworks like React and Angular, and I have experience working with databases and content managers like MySQL and WordPress.
-
+						\n\n\r
 						I am passionate about the world of web development and am always looking for new ways to learn and improve my skills.I enjoy working on projects that allow me to use my creative and technical knowledge to solve problems and create innovative solutions.In my free time, I like to experiment with new technologies and tools and participate in the web development community through forums and events.`,
 					},
 					skills: {
@@ -29,10 +29,6 @@ export default i18n.use(LanguageDetector).use(initReactI18next)
 					},
 					projects: {
 						title: 'Projects'
-					},
-					contact: {
-						title: 'Contact me',
-						subtitle: 'If you want to contact me, you can do it through the following social networks or by filling out the form below.',
 					}
 				}
 			},
@@ -61,10 +57,6 @@ export default i18n.use(LanguageDetector).use(initReactI18next)
 					},
 					projects: {
 						title: 'Proyectos'
-					},
-					contact: {
-						title: 'Contactame',
-						subtitle: 'Si quieres contactarme, puedes hacerlo a través de las siguientes redes sociales o llenando el siguiente formulario.',
 					}
 				}
 			}

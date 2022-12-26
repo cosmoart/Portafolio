@@ -35,7 +35,10 @@ export default function Navbar() {
 
 	return (
 		<header className={`w-full z-40 bg-opacity-50 backdrop-blur-sm fixed top-0 transition-transform translate-y-0 shadow-sm ${!showNavBar && "-translate-y-20"}`} ref={navBar}>
-			<nav>
+			<nav className='flex justify-between pr-14'>
+				<li>
+					<button onClick={() => window.scrollTo(0, 0)}><img src={Logo} alt="Logo" className='w-9' /></button>
+				</li>
 				<ul className="flex gap-9 p-2 justify-center items-center text-sm pl-12">
 					<li className='text-center'>
 						<a href="/#about" className="uppercase font-bold">{t("navBar.about")}</a>
@@ -43,25 +46,18 @@ export default function Navbar() {
 					<li className='text-center'>
 						<a href="/#skills" className="uppercase font-bold">{t("navBar.skills")}</a>
 					</li>
-					<li>
-						<button onClick={() => window.scrollTo(0, 0)}><img src={Logo} alt="Logo" className='w-9' /></button>
-					</li>
 					<li className='text-center'>
 						<a href="/#projects" className="uppercase font-bold" >{t("navBar.projects")}</a>
 					</li>
-					<li className='text-center'>
-						<a href="/#contact" className="uppercase font-bold">{t("navBar.contact")}</a>
-					</li>
 				</ul>
-				<div className='absolute right-4 top-1/2 -translate-y-1/2 flex gap-2 text-sm'>
-					<button key={'es'} style={{ fontWeight: i18n.resolvedLanguage === 'es' ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage('es')}>
+				<div className='absolute right-10 text-sm'>
+					<button className='absolute top-0 left-0' key={'es'} style={{ fontWeight: i18n.resolvedLanguage === 'es' ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage('es')}>
 						{'ESP'}
 					</button>
-					<button key={'en'} style={{ fontWeight: i18n.resolvedLanguage === 'en' ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage('en')}>
+					<button className='absolute top-6 left-0' key={'en'} style={{ fontWeight: i18n.resolvedLanguage === 'en' ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage('en')}>
 						{'ENG'}
 					</button>
 				</div>
-				<div className='w-1 h-6 bg-red-500 absolute top-0 left-1/2 -translate-x-1/2 z-20'></div>
 			</nav>
 		</header>
 	)
