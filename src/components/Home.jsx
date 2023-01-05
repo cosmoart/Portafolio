@@ -17,12 +17,12 @@ export default function Home() {
 				</a>
 			</div>
 			<nav className='absolute left-4 top-1/2 -translate-y-1/2'>
-				<ul className='flex flex-col gap-2 relative z-20'>
+				<ul className='flex flex-col gap-3 relative z-20'>
 					{
 						contact.map((item, index) => (
 							<li key={index}>
-								<a href={item.link} target="_blank" rel="noopener noreferrer" className='bg-[var(--bgColor)] rounded-full p-4 inline-block' style={{ "--bgColor": item.color }}>
-									<img src={`/contact/${item.name}.svg`} alt={item.name} className="w-8 h-8 invert" />
+								<a href={item.link} target="_blank" rel="noopener noreferrer" className='bg-[var(--bgColor)] rounded-full p-2 inline-block' style={{ "--bgColor": item.color }}>
+									<img src={`/contact/${item.name}.svg`} alt={item.name} className="w-5 h-5 invert" />
 								</a>
 							</li>
 						))

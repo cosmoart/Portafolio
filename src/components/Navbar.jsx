@@ -16,8 +16,8 @@ export default function Navbar() {
 		// 	prevScroll = currentScroll;
 		// }
 
-		const observer = new IntersectionObserver((entries) => {
-			entries.forEach((entry) => {
+		const observer = new IntersectionObserver(entries => {
+			entries.forEach(entry => {
 				if (entry.isIntersecting) {
 					const id = entry.target.id
 					const navLinks = document.querySelectorAll('nav a')
@@ -35,11 +35,9 @@ export default function Navbar() {
 
 	return (
 		<header className={`w-full z-40 bg-opacity-50 backdrop-blur-sm fixed top-0 transition-transform translate-y-0 shadow-sm ${!showNavBar && "-translate-y-20"}`} ref={navBar}>
-			<nav className='flex justify-between pr-14'>
-				<li>
-					<button onClick={() => window.scrollTo(0, 0)}><img src={Logo} alt="Logo" className='w-9' /></button>
-				</li>
-				<ul className="flex gap-9 p-2 justify-center items-center text-sm pl-12">
+			<nav className='flex justify-between pr-14 pl-5 p-2'>
+				<button onClick={() => window.scrollTo(0, 0)}><img src={Logo} alt="Logo" className='w-9' /></button>
+				<ul className="flex gap-9 justify-center items-center text-sm pl-12">
 					<li className='text-center'>
 						<a href="/#about" className="uppercase font-bold">{t("navBar.about")}</a>
 					</li>
