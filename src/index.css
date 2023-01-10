@@ -11,6 +11,22 @@
 	}
 }
 
+html {
+	color: white;
+	scroll-behavior: smooth;
+	font-family: 'Roboto', sans-serif;
+}
+
+.bg-main {
+	content: '';
+	position: absolute;
+	width: 150vw;
+	height: 385px;
+	background: white;
+	transform: rotate(40deg);
+}
+
+/* ========= HOME ========= */
 main {
 	background: #12163b !important;
 	position: relative;
@@ -33,21 +49,7 @@ main::before {
 	transform: rotate(220deg) translate(9rem, 9rem) scaleY(0.5);
 }
 
-.bg-main {
-	content: '';
-	position: absolute;
-	width: 150vw;
-	height: 385px;
-	background: white;
-	transform: rotate(40deg);
-}
-
-html {
-	color: white;
-	scroll-behavior: smooth;
-	font-family: 'Roboto', sans-serif;
-}
-
+/* ========= COLOR PICKER ========= */
 .colorPicker {
 	-webkit-appearance: none;
 	appearance: none;
@@ -62,25 +64,33 @@ html {
 	border: none;
 }
 
+/* ============ SELECTION & FOCUS ============ */
+
+::selection {
+	background: var(--mainColor);
+	color: white;
+}
+
+:focus-visible {
+	outline: 3px dotted var(--mainColor);
+	outline-offset: 3px;
+}
+
 /* ============ SCROLL-BAR ========= */
-/* width */
 ::-webkit-scrollbar {
 	width: 13px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
 	background: #1f2937;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	border: 3px solid #1f2937;
 	background: var(--mainColor);
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: rgb(255, 255, 255);
 }
