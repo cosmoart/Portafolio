@@ -6,7 +6,7 @@ import '@/styles/projectsDialog/projectsDialog.css'
 import { orderArray } from '@/utils/order-array'
 import { useLanguage } from '@/context/language'
 import Images from './Images'
-import Project from './ProjecT'
+import Project from './Project'
 import Slider from './Slider'
 
 export default function ProjectsDialog ({ currentProject, setCurrentProject }) {
