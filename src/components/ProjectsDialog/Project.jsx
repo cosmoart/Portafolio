@@ -34,7 +34,7 @@ export default function Project ({ orderProjects, currentProject }) {
 				{
 					orderProjects[currentProject]?.repo && (
 						<a href={orderProjects[currentProject].repo} target='_blank' rel='noopener noreferrer'>
-							<img src={repoIcon} alt='repo' />
+							<img src={repoIcon} alt='' />
 							{translations.projects.code}
 						</a>
 					)
@@ -42,7 +42,7 @@ export default function Project ({ orderProjects, currentProject }) {
 				{
 					orderProjects[currentProject]?.live && (
 						<a href={orderProjects[currentProject].live} target='_blank' rel='noopener noreferrer'>
-							<img src={liveIcon} alt='live' />
+							<img src={liveIcon} alt='' />
 							{translations.projects.live}
 						</a>
 					)

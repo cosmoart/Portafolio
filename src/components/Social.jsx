@@ -50,8 +50,8 @@ export default function Social () {
 				<ul className='social-container'>
 					{socialInfo.map((social, index) => {
 						return (
-							<li key={index} className='social-link' style={{ '--bg-color': social.color }} title={social.name} aria-label={social.name}>
-								<a href={social.link} target='_blank' rel='noopener noreferrer'>
+							<li key={index} className='social-link' style={{ '--bg-color': social.color }} title={social.name}>
+								<a href={social.link} target='_blank' rel='noopener noreferrer' aria-label={social.name}>
 									{social.icon}
 								</a>
 							</li>
