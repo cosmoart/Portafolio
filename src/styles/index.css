@@ -140,24 +140,28 @@ main,
 	font-family: Poppins;
 	src: url('@/assets/fonts/Poppins-Light.ttf');
 	font-weight: 300;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: Poppins;
 	src: url('@/assets/fonts/Poppins-Regular.ttf');
 	font-weight: 400;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: Poppins;
 	src: url('@/assets/fonts/Poppins-SemiBold.ttf');
 	font-weight: 600;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: Poppins;
 	src: url('@/assets/fonts/Poppins-Bold.ttf');
 	font-weight: 700;
+	font-display: swap;
 }
 
 /* ============ SELECTION & FOCUS ============ */

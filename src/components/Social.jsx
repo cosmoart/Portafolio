@@ -1,7 +1,9 @@
 import { GmailIcon, GithubIcon, DiscordIcon, InstagramIcon, TwitterIcon } from '@/assets/icons/social-links'
+import { useLanguage } from '@/context/language'
 import '@/styles/social.css'
 
 export default function Social () {
+	const { translations } = useLanguage()
 	const socialInfo = [
 		{
 			name: 'Github',
@@ -42,13 +44,13 @@ export default function Social () {
 
 	return (
 		<section className='section social'>
-			<h2 className='hidden'>Social</h2>
+			<h2 className='hidden'>{translations.social.tile}</h2>
 
 			<nav>
 				<ul className='social-container'>
 					{socialInfo.map((social, index) => {
 						return (
-							<li key={index} className='social-link' style={{ '--bg-color': social.color }} title={social.name}>
+							<li key={index} className='social-link' style={{ '--bg-color': social.color }} title={social.name} aria-label={social.name}>
 								<a href={social.link} target='_blank' rel='noopener noreferrer'>
 									{social.icon}
 								</a>

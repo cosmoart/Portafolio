@@ -18,6 +18,9 @@
 		"theme": "Change theme",
 		"code": "View code"
 	},
+	"social": {
+		"title": "Social networks"
+	},
 	"skills": {
 		"title": "Skills"
 	},

@@ -7,7 +7,7 @@ export default function Logo () {
 
 	return (
 		<div className='section logo'>
-			<input type='color' name='' className='color-picker' defaultValue='#713dff' onChange={changeColor} data-sound='bite.mp3' />
+			<input type='color' aria-label='Main color' className='color-picker' defaultValue='#713dff' onChange={changeColor} data-sound='bite.mp3' />
 			<img src='./favicon.svg' alt='' data-sound='bite.mp3' />
 		</div>
 	)

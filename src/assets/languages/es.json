@@ -18,6 +18,9 @@
 		"theme": "Cambiar tema",
 		"code": "Ver código"
 	},
+	"social": {
+		"title": "Redes sociales"
+	},
 	"skills": {
 		"title": "Habilidades"
 	},
