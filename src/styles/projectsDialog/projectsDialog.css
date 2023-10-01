@@ -1,0 +1,151 @@
+.projects-dialog {
+	width: 90%;
+	max-width: 1100px;
+	height: 90%;
+	max-height: 780px;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
+	background: transparent;
+	border: none;
+}
+
+.projects-dialog.hide {
+	animation: hide 0.2s ease-in-out forwards !important;
+}
+
+.projects-dialog.hide::backdrop {
+	animation: hideblur 0.2s ease-in-out forwards;
+}
+
+.projects-dialog[open] {
+	display: flex;
+	animation: appear 0.2s ease-in-out;
+}
+
+@keyframes appear {
+	from {
+		opacity: 0;
+		scale: 0.9;
+	}
+
+	to {
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+@keyframes hide {
+	to {
+		opacity: 0;
+		scale: 0.9;
+	}
+}
+
+@keyframes hideblur {
+	to {
+		backdrop-filter: blur(0);
+	}
+}
+
+.projects-dialog::backdrop {
+	background: #0f0f136b;
+	backdrop-filter: blur(6px);
+}
+
+.darkmode .projects-dialog {
+	color: white;
+}
+
+.current-project {
+	background: white;
+	backdrop-filter: blur(10px);
+	border-radius: 10px;
+	box-shadow: inset -1px 0 2px rgb(255 255 255 / 25%),
+		inset 0 1px 2px rgb(255 255 255 / 25%),
+		inset 0 0 0 1px rgb(255 255 255 / 3%);
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	height: 26rem;
+}
+
+.darkmode .current-project {
+	background: #0f0f139f;
+}
+
+.current-project section:first-of-type {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+}
+
+.current-project section:last-of-type {
+	width: 50%;
+	padding-right: 2rem;
+}
+
+.current-project .poster {
+	width: 50%;
+	object-fit: cover;
+	border-radius: 10px 0 0;
+}
+
+.current-project > article {
+	width: 50%;
+}
+
+.skill-contrast img {
+	filter: invert(0) !important;
+}
+
+.projects-dialog .close {
+	position: absolute;
+	top: -0.6rem;
+	right: -0.6rem;
+	border-radius: 100%;
+	cursor: pointer;
+	width: 2rem;
+	height: 2rem;
+	display: grid;
+	place-items: center;
+	transition: all 0.2s ease-in-out;
+	background: var(--dark-body-color);
+}
+
+.darkmode .projects-dialog .close {
+	background: white;
+}
+
+.projects-dialog .close:hover {
+	scale: 1.07;
+}
+
+.projects-dialog .close img {
+	transition: all 0.2s ease-in-out;
+	filter: invert(1);
+}
+
+.darkmode .projects-dialog .close img {
+	filter: invert(0);
+}
+
+.projects-dialog .close:hover img {
+	scale: 1.13;
+}
+
+.skill-contrast {
+	color: black !important;
+	font-weight: 600;
+}
+
+@media (width <= 1050px) {
+	.projects-dialog {
+		display: none !important;
+	}
+}

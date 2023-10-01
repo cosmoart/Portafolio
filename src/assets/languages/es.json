@@ -1,0 +1,30 @@
+{
+	"close": "Cerrar",
+	"title": {
+		"hello": "Hola, soy",
+		"webdeveloper": "Desarrollador web"
+	},
+	"about": {
+		"title": "Sobre mí",
+		"description": "Desarrollador web front-end autodidacta con 2 años de experiencia trabajando y aprendiendo de diferentes proyectos personales y profesionales. Desarrollo aplicaciones web con tecnologías como React, Next.js, Tailwind, entre otras. Hablo español e inglés, y, lo más importante, me gusta el café ☕."
+	},
+	"settings": {
+		"darkmode": "Modo oscuro",
+		"lightmode": "Modo claro",
+		"english": "Inglés",
+		"spanish": "Español",
+		"sound": "Sonido",
+		"mute": "Silenciar",
+		"theme": "Cambiar tema",
+		"code": "Ver código"
+	},
+	"skills": {
+		"title": "Habilidades"
+	},
+	"projects": {
+		"title": "Proyectos",
+		"more": "Ver más",
+		"code": "Código",
+		"live": "Página"
+	}
+}

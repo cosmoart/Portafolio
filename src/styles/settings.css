@@ -1,0 +1,83 @@
+.settings {
+	padding: 1rem 2rem !important;
+}
+
+.sound-btn {
+	position: relative;
+	height: 28px;
+	width: 28px;
+}
+
+.sound-btn img {
+	position: absolute;
+	transition: all 0.2s;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 24px;
+}
+
+.img-hidden {
+	opacity: 0;
+	scale: 0.8;
+	z-index: -10;
+}
+
+.settings ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.settings li {
+	width: 22px;
+	height: 22px;
+}
+
+.settings button,
+.settings a {
+	vertical-align: middle;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: none;
+	transition: all 0.2s;
+	display: inline-block;
+}
+
+.settings button:focus-visible,
+.settings a:focus-visible {
+	outline: 4px dashed white;
+}
+
+.settings img {
+	width: 100%;
+	height: 100%;
+	filter: invert(1);
+}
+
+.settings button:active,
+.settings a:active {
+	scale: 1;
+}
+
+@media (width >= 570px) {
+	.settings {
+		padding: 1.3rem 0.8rem !important;
+	}
+
+	.settings ul {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+@media (any-hover: hover) {
+	.settings button:hover,
+	.settings a:hover {
+		scale: 1.15;
+	}
+}

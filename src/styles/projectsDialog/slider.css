@@ -1,0 +1,76 @@
+.projects-slider {
+	position: relative;
+	margin-inline: auto;
+	width: 80%;
+	max-width: 45rem;
+}
+
+.projects-slider .slider {
+	position: relative;
+	height: 5rem;
+	display: flex;
+	gap: 1rem;
+}
+
+.projects-slider .project {
+	flex-shrink: inherit;
+}
+
+.projects-slider .project-title {
+	margin: 0;
+}
+
+.projects-slider article {
+	cursor: pointer;
+}
+
+.slider img {
+	height: 100%;
+	object-fit: cover;
+}
+
+.project-buttons button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+	background: white;
+	border-radius: 100%;
+	padding: 4px;
+	transition: all 0.2s ease-in-out;
+	transform-origin: top;
+}
+
+.project-buttons button:hover {
+	scale: 1.08;
+}
+
+.project-buttons button:disabled {
+	filter: grayscale(1);
+	opacity: 0.7;
+	pointer-events: none;
+}
+
+.project-buttons button:first-child {
+	left: -4rem;
+}
+
+.project-buttons button:last-child {
+	right: -4rem;
+}
+
+.project-buttons button img {
+	width: 1.5rem;
+	height: 1.5rem;
+	vertical-align: middle;
+}
+
+.arrow-left {
+	rotate: 180deg;
+}
+
+.project-selected {
+	outline: white solid 1px;
+	outline-offset: 3px;
+	scale: 1.1;
+}

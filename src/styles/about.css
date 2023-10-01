@@ -1,0 +1,28 @@
+.about p {
+	font-weight: 400;
+	text-wrap: balance;
+	margin: 0;
+}
+
+.darkmode .about p {
+	font-weight: 300;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.about h2 {
+	margin-bottom: 10px;
+}
+
+@media (570px <= width) {
+	.about h2,
+	.about p {
+		max-width: 40rem;
+		margin: auto;
+		width: 100%;
+	}
+}

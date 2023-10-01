@@ -1,0 +1,79 @@
+.project-links a {
+	padding: 0.5rem 1rem;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	border-radius: 10px;
+	background-color: var(--dark-body-color);
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	color: white;
+}
+
+.project-links a:last-child {
+	background: var(--primary-color);
+}
+
+.project-links a:hover {
+	opacity: 0.8;
+	scale: 1.05;
+}
+
+.current-project .project-title {
+	font-size: 2rem;
+	margin-top: 2rem;
+	display: inline-block;
+}
+
+.current-project .project-title a {
+	text-decoration: none;
+	color: var(--dark-text-color);
+}
+
+.darkmode .current-project .project-title a {
+	color: white;
+}
+
+.current-project .project-title:hover a {
+	text-decoration: underline;
+}
+
+.current-project .project-description {
+	margin-block: 1rem;
+	padding-right: 1.5rem;
+	text-wrap: balance;
+	font-size: 16px;
+}
+
+.project-technologies {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	font-size: 14px;
+}
+
+.project-skill {
+	display: flex;
+	gap: 10px;
+	padding: 5px 10px;
+	border-radius: 6px;
+	color: white;
+	align-items: flex-end;
+}
+
+.project-skill img {
+	width: 1rem;
+}
+
+.project-links img,
+.project-skill img {
+	filter: invert(1);
+}
+
+.project-links {
+	position: absolute;
+	bottom: 1rem;
+	right: 2rem;
+	display: flex;
+	gap: 1rem;
+}

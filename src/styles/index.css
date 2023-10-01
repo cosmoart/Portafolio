@@ -1,0 +1,245 @@
+html {
+	scroll-behavior: smooth;
+	font-family: Poppins, sans-serif !important;
+}
+
+* {
+	transition: background-color 0.2s ease-in-out;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	background-color: #ebebfa;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+}
+
+h2 {
+	margin-bottom: 1rem;
+	font-weight: 600;
+	font-size: 1.4rem;
+}
+
+.hidden {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+}
+
+main {
+	padding: 24px;
+}
+
+.darkmode body {
+	background-color: var(--dark-body-color);
+}
+
+main,
+.loading-page .container {
+	height: 100%;
+	max-width: 1500px;
+	display: grid;
+	gap: 24px;
+	grid-template-areas:
+		'title title'
+		'about about'
+		'skills skills'
+		'social social'
+		'settings settings'
+		'projects projects'
+		'logo logo';
+}
+
+.logo,
+.settings {
+	box-shadow: var(--primary-color) 0 5px 30px -10px;
+	background: var(--primary-color) !important;
+}
+
+.darkmode {
+	color: white;
+}
+
+.section {
+	border-radius: 8px;
+	padding: 24px;
+	background: #cbc5f8;
+}
+
+.darkmode .section {
+	background: var(--dark-section-color);
+}
+
+.title {
+	grid-area: title;
+	position: relative;
+}
+
+.logo {
+	grid-area: logo;
+}
+
+.skills {
+	grid-area: skills;
+}
+
+.about {
+	grid-area: about;
+}
+
+.settings {
+	grid-area: settings;
+}
+
+.social {
+	grid-area: social;
+}
+
+.projects {
+	grid-area: projects;
+	position: relative;
+}
+
+/* Noise bg  ============= */
+.title::after,
+.projects::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('/noise.gif');
+	pointer-events: none;
+	z-index: 1;
+	opacity: 0.03;
+}
+
+/* Poppins regular, semibold y bold */
+@font-face {
+	font-family: Poppins;
+	src: url('@/assets/fonts/Poppins-Light.ttf');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url('@/assets/fonts/Poppins-Regular.ttf');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url('@/assets/fonts/Poppins-SemiBold.ttf');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url('@/assets/fonts/Poppins-Bold.ttf');
+	font-weight: 700;
+}
+
+/* ============ SELECTION & FOCUS ============ */
+
+::selection {
+	background: var(--primary-color);
+	color: white;
+}
+
+:focus-visible {
+	border-radius: 3px;
+	outline: 4px dashed var(--primary-color);
+	outline-offset: 4px;
+}
+
+/* ============ SCROLL-BAR ========= */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: white;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	border: 3px solid white;
+	background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #4c6180;
+}
+
+.darkmode ::-webkit-scrollbar-track {
+	background: #1f2937;
+}
+
+.darkmode ::-webkit-scrollbar-thumb {
+	border: 3px solid #1f2937;
+	background: #cbc5f8;
+}
+
+@media (570px <= width) {
+	main,
+	.loading-page .container {
+		padding: 36px;
+		grid-template: none;
+		grid-template-areas:
+			'title title title'
+			'about about about'
+			'skills social settings'
+			'projects  projects projects'
+			'logo logo logo';
+	}
+}
+
+@media (1050px <= width) {
+	main,
+	.loading-page .container {
+		grid-template: 0.3fr 0.1fr 1fr 0.4fr / 0.9fr 1fr 2fr 0.15fr;
+		margin: auto;
+		max-height: 720px;
+		grid-template-areas:
+			'title title about settings'
+			'skills social about settings'
+			'skills projects projects projects'
+			'logo projects projects projects';
+		position: absolute;
+		inset: 0;
+	}
+}
+
+/* ==== Reduce motion ===== */
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}

@@ -1,0 +1,69 @@
+.title h1 {
+	gap: 0 15px;
+	position: relative;
+	text-transform: uppercase;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title-hello {
+	grid-area: title-hello;
+}
+
+.title-name {
+	grid-area: title-name;
+	line-height: 4rem;
+	font-size: clamp(3rem, 4.5vw, 4.3rem);
+	background: linear-gradient(90deg, var(--primary-color) 30%, #2568ff 100%);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+.title-subtitle {
+	grid-area: title-subtitle;
+	font-size: clamp(0.9rem, 1.3vw, 1rem);
+}
+
+@media (width <= 570px) {
+	.title-hello {
+		line-height: 1.2rem;
+	}
+
+	.title-name {
+		font-size: 4rem;
+	}
+}
+
+@media (570px <= width <= 1050px) {
+	.title-name {
+		font-size: 4rem;
+	}
+
+	.title-subtitle {
+		font-size: clamp(0.7rem, 2vw, 1.2rem);
+	}
+}
+
+@media (570px <= width) {
+	.title h1 {
+		display: grid;
+		grid-template-areas:
+			'title-hello title-name'
+			'title-subtitle title-name';
+	}
+
+	.title-hello,
+	.title-subtitle {
+		text-align: right;
+		height: 100%;
+	}
+
+	.title-hello {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+	}
+}
