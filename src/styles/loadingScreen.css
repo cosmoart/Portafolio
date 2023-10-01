@@ -5,6 +5,7 @@
 	top: 0;
 	left: 0;
 	z-index: 1000;
+	background: white;
 }
 
 .darkmode .loading-page {
@@ -15,14 +16,15 @@
 	padding: 36px;
 	padding-right: calc(36px - 12px);
 	width: 100%;
-	max-height: 680px;
 	height: 100%;
-	grid-template: 0.3fr 0.1fr 1fr 0.4fr / 1fr 1fr;
+	grid-template: 0.64fr 0.1fr 1fr 0.4fr / 0.9fr 1fr 2fr 0.15fr;
+	margin: auto !important;
+	max-height: 680px;
 	grid-template-areas:
 		'title title about settings'
 		'skills social about settings'
 		'skills projects projects projects'
-		'logo projects projects projects';
+		'logo projects projects projects' !important;
 }
 
 .loading-page .container > div {
@@ -58,26 +60,19 @@
 	}
 }
 
-@media (width >= 1050px) {
-	@keyframes loading-pag {
-		from {
-			clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-		}
-
-		to {
-			clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%);
-			pointer-events: none;
-		}
+@keyframes loading-pag {
+	from {
+		clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
 	}
 
-	.loading-page .container {
-		grid-template: 0.64fr 0.1fr 1fr 0.4fr / 0.9fr 1fr 2fr 0.15fr;
-		margin: auto !important;
-		max-height: 680px;
-		grid-template-areas:
-			'title title about settings'
-			'skills social about settings'
-			'skills projects projects projects'
-			'logo projects projects projects' !important;
+	to {
+		clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%);
+		pointer-events: none;
+	}
+}
+
+@media (width < 1050px) {
+	.loading-page {
+		display: none;
 	}
 }

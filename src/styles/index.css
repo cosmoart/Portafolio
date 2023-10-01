@@ -169,6 +169,7 @@ main,
 ::selection {
 	background: var(--primary-color);
 	color: white;
+	-webkit-text-fill-color: white;
 }
 
 :focus-visible {
