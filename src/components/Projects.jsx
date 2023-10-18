@@ -38,7 +38,8 @@ export default function Projects () {
 			<div className='projects-title'>
 				<h2 >{translations.projects.title}</h2>
 				<a className='see-more' href='https://github.com/cosmoart?tab=repositories' target='_blank' rel='noopener noreferrer'>
-					{translations.projects.more}
+					<span>{translations.projects.more}</span>
+					<img src={liveIcon} alt='' />
 				</a>
 			</div>
 

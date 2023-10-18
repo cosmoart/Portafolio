@@ -4,6 +4,7 @@
 	background: linear-gradient(23deg, rgb(19 16 156 / 100%), rgb(0 0 0 / 0%)),
 		url('/noise.svg');
 	position: relative;
+	padding: 1rem;
 }
 
 .logo img {
@@ -31,4 +32,17 @@
 
 .color-picker::-webkit-color-swatch {
 	border: none;
+}
+
+.logo-border {
+	--padding: 10px;
+
+	border: 1px solid rgb(255 255 255 / 15%);
+	position: absolute;
+	top: var(--padding);
+	left: var(--padding);
+	width: calc(100% - var(--padding) * 2);
+	height: calc(100% - var(--padding) * 2);
+	border-radius: 5px;
+	pointer-events: none;
 }

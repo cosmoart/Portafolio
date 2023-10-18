@@ -6,7 +6,7 @@
 	},
 	"about": {
 		"title": "Sobre mí",
-		"description": "Desarrollador web front-end autodidacta con 2 años de experiencia trabajando y aprendiendo de diferentes proyectos personales y profesionales. Desarrollo aplicaciones web con tecnologías como React, Next.js, Tailwind, entre otras. Hablo español e inglés, y, lo más importante, me gusta el café ☕."
+		"description": "Desarrollador web front-end autodidacta con <span>2 años de experiencia</span> trabajando y aprendiendo de diferentes proyectos personales y profesionales. Desarrollo aplicaciones web con tecnologías como React, Next.js, Tailwind, entre otras. Hablo <span>español e inglés</span>, y, lo más importante, <span>me gusta el café ☕.</span>"
 	},
 	"settings": {
 		"darkmode": "Modo oscuro",

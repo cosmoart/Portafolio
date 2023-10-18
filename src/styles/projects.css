@@ -97,10 +97,6 @@
 	object-fit: cover;
 }
 
-.code-btn img:last-of-type {
-	opacity: 0;
-}
-
 .language-btn span {
 	opacity: 0;
 }
@@ -124,6 +120,32 @@
 	font-size: 14px;
 	display: flex;
 	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.see-more img {
+	width: 18px;
+	transition: right 0.16s ease-in-out;
+	position: absolute;
+	right: -1.1rem;
+}
+
+.see-more span {
+	margin-right: 8px;
+	transition: margin-right 0.16s ease-in-out;
+}
+
+.see-more:hover span {
+	margin-right: 1.2rem;
+}
+
+.see-more:hover img {
+	right: 0;
+}
+
+.darkmode .see-more img {
+	filter: invert(1);
 }
 
 .darkmode .see-more {
@@ -169,6 +191,10 @@
 
 .box:not(:first-child) {
 	display: none;
+}
+
+.code-btn img:last-of-type {
+	opacity: 0;
 }
 
 @media (width >= 570px) {

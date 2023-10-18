@@ -8,7 +8,7 @@ import SoundOffIcon from '@/assets/settings/sound-off.svg'
 import DarkModeIcon from '@/assets/settings/darkmode.svg'
 import LightModeIcon from '@/assets/settings/lightmode.svg'
 import ExternalLinkIcon from '@/assets/settings/external-link.svg'
-import CodeIcon from '@/assets/settings/code.svg'
+import StarIcon from '@/assets/settings/star.svg'
 
 export default function Settings () {
 	const darkModeLocal = localStorage.getItem('darkmode')
@@ -72,7 +72,7 @@ export default function Settings () {
 						target='_blank'
 						rel='noopener noreferrer'
 						title={`${translations.settings.code}`}>
-						<img src={CodeIcon} alt='Code' data-sound='switch-on.mp3' />
+						<img src={StarIcon} alt='Code' data-sound='switch-on.mp3' />
 						<img src={ExternalLinkIcon} alt='' data-sound='switch-off.mp3' />
 					</a>
 				</li>

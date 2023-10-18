@@ -1,13 +1,3 @@
-.about p {
-	font-weight: 400;
-	text-wrap: balance;
-	margin: 0;
-}
-
-.darkmode .about p {
-	font-weight: 300;
-}
-
 .about {
 	display: flex;
 	flex-direction: column;
@@ -16,6 +6,27 @@
 
 .about h2 {
 	margin-bottom: 10px;
+}
+
+.about p {
+	font-weight: 400;
+	text-wrap: balance;
+	margin: 0;
+	color: var(--dark-text-color);
+}
+
+.about p span {
+	color: black;
+	text-decoration: underline var(--primary-color);
+}
+
+.darkmode .about p {
+	font-weight: 300;
+	color: rgb(255 255 255 / 80%);
+}
+
+.darkmode .about p span {
+	color: white;
 }
 
 @media (570px <= width) {

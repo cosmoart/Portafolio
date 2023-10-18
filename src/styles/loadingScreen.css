@@ -32,6 +32,7 @@
 	border-radius: 8px;
 	animation: pulse-loading 1s linear infinite alternate;
 	transition: opacity 0.2s ease-in-out;
+	border-top: 1px solid rgb(119 129 143 / 20%);
 }
 
 @keyframes pulse-loading {
@@ -46,18 +47,6 @@
 
 .darkmode .loading-page .container > div {
 	background: var(--dark-section-color);
-}
-
-@keyframes loading-pag {
-	from {
-		clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-	}
-
-	to {
-		clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-		pointer-events: none;
-		z-index: -999;
-	}
 }
 
 @keyframes loading-pag {

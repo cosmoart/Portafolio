@@ -6,7 +6,7 @@ export default function LoadingScreen () {
 	return (
 		<div className='loading-page'>
 			<div className='container'>
-				<div className='title' style={{ height: '111px' }}></div>
+				<div className='title' style={{ height: '113px' }}></div>
 				<div className='about'>	</div>
 				<div className='settings'>
 					<div style={{ width: '23px' }}></div>
@@ -17,7 +17,7 @@ export default function LoadingScreen () {
 				<div className='skills'></div>
 				<div className='projects'></div>
 				<div className='logo'>
-					<div style={{ height: '146px' }}></div>
+					<div style={{ height: '116px' }}></div>
 				</div>
 			</div>
 		</div>
