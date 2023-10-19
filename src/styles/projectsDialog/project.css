@@ -2,12 +2,13 @@
 	padding: 0.5rem 1rem;
 	display: flex;
 	align-items: center;
-	gap: 10px;
-	border-radius: 10px;
 	background-color: var(--dark-body-color);
 	transition: all 0.2s ease-in-out;
 	text-decoration: none;
 	color: white;
+	border-radius: 6px;
+	gap: 4px;
+	line-height: 10px;
 }
 
 .project-links a:last-child {
@@ -15,8 +16,7 @@
 }
 
 .project-links a:hover {
-	opacity: 0.8;
-	scale: 1.05;
+	scale: 1.03 1;
 }
 
 .current-project .project-title {

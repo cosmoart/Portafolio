@@ -1,0 +1,86 @@
+{
+	"html": {
+		"name": "HTML",
+		"color": "#E34F26",
+		"skills": true
+	},
+	"css": {
+		"name": "CSS",
+		"color": "#1572B6",
+		"skills": true
+	},
+	"javascript": {
+		"name": "JavaScript",
+		"color": "#F7DF1E",
+		"contrast": true,
+		"skills": true
+	},
+	"typescript": {
+		"name": "TypeScript",
+		"color": "#3178C6",
+		"skills": true
+	},
+	"react": {
+		"name": "React",
+		"color": "#61DBFB",
+		"contrast": true,
+		"skills": true
+	},
+	"nextjs": {
+		"name": "Next.js",
+		"color": "#000000",
+		"skills": true
+	},
+	"tailwind": {
+		"name": "Tailwind",
+		"color": "#06B6D4",
+		"skills": true
+	},
+	"git": {
+		"name": "Git",
+		"color": "#F05032",
+		"skills": true
+	},
+	"figma": {
+		"name": "Figma",
+		"color": "#F24E1E",
+		"skills": true
+	},
+	"bootstrap": {
+		"name": "Bootstrap",
+		"color": "#7952B3",
+		"skills": true
+	},
+	"sass": {
+		"name": "Sass",
+		"color": "#CC6699",
+		"skills": true
+	},
+	"node": {
+		"name": "Node",
+		"color": "#339933",
+		"skills": true
+	},
+	"express": {
+		"name": "Express",
+		"color": "#000000",
+		"skills": true
+	},
+	"blender": {
+		"name": "Blender",
+		"color": "#F5792A",
+		"skills": true
+	},
+	"leaflet": {
+		"name": "LeafletJS",
+		"color": "#199900"
+	},
+	"axios": {
+		"name": "Axios",
+		"color": "#5F9EA0"
+	},
+	"styledComponents": {
+		"name": "Styled Components",
+		"color": "#DB7093"
+	}
+}

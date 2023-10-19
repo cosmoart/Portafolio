@@ -34,6 +34,7 @@ export default function Projects () {
 
 	return (
 		<section className='section projects'>
+			<div className='wave'></div>
 
 			<div className='projects-title'>
 				<h2 >{translations.projects.title}</h2>

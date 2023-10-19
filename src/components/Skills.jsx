@@ -2,10 +2,13 @@ import skills from '@/assets/json/skills.json'
 import { useLanguage } from '@/context/language'
 import Tooltip from './ui/Tooltip'
 import '@/styles/skills.css'
+import skillss from '@/assets/json/techs.json'
+import projects from '@/assets/json/projects.js'
 
 export default function Skills () {
 	const { translations } = useLanguage()
-
+	console.log(skillss)
+	console.log(projects)
 	return (
 		<section className='section skills'>
 			<h2>{translations.skills.title}</h2>

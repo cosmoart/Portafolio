@@ -17,7 +17,7 @@
 
 .about p span {
 	color: black;
-	text-decoration: underline var(--primary-color);
+	text-decoration: underline var(--primary-color) 2px;
 }
 
 .darkmode .about p {

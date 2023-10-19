@@ -28,11 +28,28 @@
 }
 
 .loading-page .container > div {
-	background: #cbc5f8;
+	background-color: #cbc5f8;
 	border-radius: 8px;
-	animation: pulse-loading 1s linear infinite alternate;
+
+	/* animation: pulse-loading 0.5s linear infinite alternate; */
 	transition: opacity 0.2s ease-in-out;
 	border-top: 1px solid rgb(119 129 143 / 20%);
+}
+
+.loading-page .title {
+	animation: pulse-loading 0.6s linear infinite alternate;
+}
+
+.loading-page .social,
+.loading-page .about,
+.loading-page .skills {
+	animation: pulse-loading 0.6s 200ms linear infinite alternate;
+}
+
+.loading-page .projects,
+.loading-page .settings,
+.loading-page .logo {
+	animation: pulse-loading 0.6s 400ms linear infinite alternate;
 }
 
 @keyframes pulse-loading {
@@ -46,7 +63,7 @@
 }
 
 .darkmode .loading-page .container > div {
-	background: var(--dark-section-color);
+	background-color: var(--dark-section-color);
 }
 
 @keyframes loading-pag {

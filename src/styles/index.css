@@ -14,6 +14,10 @@ body {
 	background-color: #ebebfa;
 }
 
+#root {
+	width: 100%;
+}
+
 img {
 	max-width: 100%;
 }
@@ -57,7 +61,7 @@ main {
 main,
 .loading-page .container {
 	height: 100%;
-	max-width: 1500px;
+	width: 100%;
 	display: grid;
 	gap: 24px;
 	grid-template-areas:
@@ -68,6 +72,9 @@ main,
 		'settings settings'
 		'projects projects'
 		'logo logo';
+	grid-template-columns: 1fr;
+	max-width: 900px;
+	margin: auto;
 }
 
 .logo,
@@ -211,7 +218,6 @@ main,
 	main,
 	.loading-page .container {
 		padding: 36px;
-		grid-template: none;
 		grid-template-areas:
 			'title title title'
 			'about about about'
@@ -234,6 +240,7 @@ main,
 			'logo projects projects projects';
 		position: absolute;
 		inset: 0;
+		max-width: 1500px;
 	}
 }
 

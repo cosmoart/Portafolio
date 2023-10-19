@@ -15,7 +15,7 @@
 .title-name {
 	grid-area: title-name;
 	line-height: 4rem;
-	font-size: clamp(3rem, 4.5vw, 4.3rem);
+	font-size: clamp(3rem, 4.7vw, 4.4rem);
 	background: linear-gradient(90deg, var(--primary-color) 30%, #2568ff 100%);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;

@@ -3,6 +3,7 @@
 	flex-direction: column;
 	padding: 0 !important;
 	overflow: hidden;
+	position: relative;
 }
 
 .projects-title {
@@ -50,6 +51,7 @@
 	gap: 1rem;
 	padding: 15px;
 	flex-direction: column;
+	scroll-behavior: smooth;
 }
 
 .projects-container::-webkit-scrollbar {
@@ -195,6 +197,41 @@
 
 .code-btn img:last-of-type {
 	opacity: 0;
+}
+
+/* ==== Wave ==== */
+
+.wave {
+	background: url('/wave.svg') repeat-x;
+	position: absolute;
+	bottom: -45px;
+	width: 6400px;
+	height: 85%;
+	animation: wave 12s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite,
+		swell 8s ease -1.25s infinite;
+	transform: translate3d(0, 0, 0);
+	opacity: 0.1;
+}
+
+@keyframes wave {
+	0% {
+		margin-left: 0;
+	}
+
+	100% {
+		margin-left: -1600px;
+	}
+}
+
+@keyframes swell {
+	0%,
+	100% {
+		transform: translate3d(0, -40px, 0);
+	}
+
+	50% {
+		transform: translate3d(0, -10px, 0);
+	}
 }
 
 @media (width >= 570px) {
