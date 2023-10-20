@@ -11,14 +11,13 @@
 	line-height: 10px;
 }
 
-.project-links a:last-child {
+.project-links .live-link {
 	background: var(--primary-color);
 }
 
 .project-links a:hover {
-	/* scale: 1.03 1; */
-	background: transparent;
-	outline: 2px solid var(--primary-color);
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
 }
 
 .current-project .project-title {
