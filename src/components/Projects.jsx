@@ -1,4 +1,4 @@
-import projectsJSON from '@/assets/json/projects.json'
+import projectssData from '@/assets/json/projects.js'
 import { useLanguage } from '@/context/language'
 import { orderArray } from '@/utils/order-array'
 import { useEffect, useState } from 'react'
@@ -10,9 +10,9 @@ import ProjectsDialog from './ProjectsDialog/ProjectsDialog'
 import '@/styles/projects.css'
 
 export default function Projects () {
-	const [currentProject, setCurrentProject] = useState(Math.floor(projectsJSON.length / 2))
+	const [currentProject, setCurrentProject] = useState(Math.floor(projectssData.length / 2))
 	const { translations, language } = useLanguage()
-	const orderProjects = orderArray(projectsJSON)
+	const orderProjects = orderArray(projectssData)
 
 	useEffect(() => {
 		const handleWheel = (e) => {
@@ -45,9 +45,10 @@ export default function Projects () {
 			</div>
 
 			<div className='projects-container'>
-				{projectsJSON.map((project, index) => {
+				{projectssData.map((project, index) => {
 					return (
-						<article className='project' key={index} onClick={() => handleProjectModal(project.name)} onMouseEnter={() => playSound('hover.ogg', 0.02)} tabIndex='0'>
+						<article className='project' key={index} onClick={() => handleProjectModal(project.name)} onMouseEnter={() => playSound('hover.ogg', 0.02)} tabIndex='0'
+							style={{ '--animation-delay': `${index * 0.1}s` }}>
 							<div className='image-container'>
 								<img src={project.poster} alt={project.name} />
 								<div className='project-viewmore'>{translations.projects.more}</div>

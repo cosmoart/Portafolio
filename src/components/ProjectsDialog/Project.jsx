@@ -1,5 +1,4 @@
 import { useLanguage } from '@/context/language'
-import skillsJSON from '@/assets/json/skills.json'
 import repoIcon from '@/assets/icons/repo.svg'
 import liveIcon from '@/assets/icons/live.svg'
 import '@/styles/projectsDialog/project.css'
@@ -18,14 +17,14 @@ export default function Project ({ orderProjects, currentProject }) {
 				{orderProjects[currentProject].description.long[language]}
 			</p>
 			<ul className='project-technologies'>
-				{orderProjects[currentProject].tech.map((tech, index) => {
+				{orderProjects[currentProject].techs.map((tech, index) => {
 					return <li key={index}
-						className={`project-skill ${tech === 'JavaScript' || tech === 'React' ? 'skill-contrast' : ''}`}
-						style={{ backgroundColor: skillsJSON.find(el => el.name === tech)?.color ?? 'var(--primary-color)' }}>
-						{skillsJSON.find(el => el.name === tech) &&
-							<img src={`/skills/${tech.toLowerCase()}.svg`} alt={tech} />
+						className={`project-skill ${tech.contrast ? 'skill-contrast' : ''}`}
+						style={{ backgroundColor: tech.color ?? 'var(--primary-color)' }}>
+						{tech.image !== false &&
+							<img src={`/skills/${tech.name.toLowerCase()}.svg`} alt={tech} />
 						}
-						{tech}
+						{tech.name}
 					</li>
 				})}
 			</ul>

@@ -16,7 +16,9 @@
 }
 
 .project-links a:hover {
-	scale: 1.03 1;
+	/* scale: 1.03 1; */
+	background: transparent;
+	outline: 2px solid var(--primary-color);
 }
 
 .current-project .project-title {

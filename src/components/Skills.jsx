@@ -1,14 +1,11 @@
-import skills from '@/assets/json/skills.json'
+import skills from '@/assets/json/skills.js'
 import { useLanguage } from '@/context/language'
 import Tooltip from './ui/Tooltip'
 import '@/styles/skills.css'
-import skillss from '@/assets/json/techs.json'
-import projects from '@/assets/json/projects.js'
 
 export default function Skills () {
 	const { translations } = useLanguage()
-	console.log(skillss)
-	console.log(projects)
+
 	return (
 		<section className='section skills'>
 			<h2>{translations.skills.title}</h2>
@@ -17,7 +14,7 @@ export default function Skills () {
 				{skills.map((skill, index) => {
 					return (
 						<li key={index}
-							style={{ '--skill-color': skill.color }}
+							style={{ '--skill-color': skill.color, '--animation-delay': `${index * 0.05}s` }}
 							className='skill tooltip-container'>
 							<img src={`/skills/${skill.name.toLowerCase()}.svg`}
 								className='invert skills_skill'

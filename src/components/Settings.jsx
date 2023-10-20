@@ -35,7 +35,7 @@ export default function Settings () {
 	return (
 		<nav className='section settings'>
 			<ul>
-				<li>
+				<li style={{ '--animation-delay': '0.1s' }}>
 					<button
 						className='sound-btn'
 						onClick={() => setDarkmode(!darkmode)}
@@ -45,7 +45,7 @@ export default function Settings () {
 					</button>
 				</li>
 
-				<li>
+				<li style={{ '--animation-delay': '0.2s' }}>
 					<button
 						onClick={() => changeLanguage(language === 'es' ? 'en' : 'es')}
 						title={`${translations.settings[language === 'es' ? 'english' : 'spanish']}`}
@@ -56,7 +56,7 @@ export default function Settings () {
 					</button>
 				</li>
 
-				<li>
+				<li style={{ '--animation-delay': '0.3s' }}>
 					<button
 						onClick={handleSound}
 						className='sound-btn'
@@ -66,7 +66,7 @@ export default function Settings () {
 					</button>
 				</li>
 
-				<li>
+				<li style={{ '--animation-delay': '0.4s' }}>
 					<a href='https://github.com/cosmoart/Portafolio'
 						className='code-btn'
 						target='_blank'

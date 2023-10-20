@@ -41,6 +41,7 @@
 	margin: auto;
 	z-index: 10;
 	filter: invert(1);
+	object-fit: contain;
 }
 
 .skills img::after {

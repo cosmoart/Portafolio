@@ -73,14 +73,17 @@
 	},
 	"leaflet": {
 		"name": "LeafletJS",
-		"color": "#199900"
+		"color": "#199900",
+		"image": false
 	},
 	"axios": {
 		"name": "Axios",
-		"color": "#5F9EA0"
+		"color": "#5F9EA0",
+		"image": false
 	},
 	"styledComponents": {
 		"name": "Styled Components",
-		"color": "#DB7093"
+		"color": "#DB7093",
+		"image": false
 	}
 }

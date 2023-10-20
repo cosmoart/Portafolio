@@ -15,7 +15,7 @@ export default [
 				es: 'Juego de preguntas generadas por IA con 3 modos de juego y comodines. Hecha con Tailwind y la API de Cohere en Next.js.'
 			}
 		},
-		tech: [techs.css, techs.javascript, techs.react],
+		techs: [techs.css, techs.javascript, techs.react],
 		poster: '/projects-images/quizi/poster.svg',
 		images: [
 			'/projects-images/quizi/home.avif',
@@ -37,7 +37,7 @@ export default [
 				es: 'Página web para una empresa ficticia de viajes espaciales. Hecha con CSS y React en Next.js.'
 			}
 		},
-		tech: [techs.css, techs.javascript, techs.nextjs, techs.react],
+		techs: [techs.css, techs.javascript, techs.nextjs, techs.react],
 		poster: '/projects-images/space-tourism/poster.avif',
 		images: [
 			'/projects-images/space-tourism/home.avif',
@@ -60,7 +60,7 @@ export default [
 				es: 'Busca y filtra información de todos los países. Hecho con Tailwind y React usando la API de REST Countries.'
 			}
 		},
-		tech: [techs.javascript, techs.tailwind, techs.react],
+		techs: [techs.javascript, techs.tailwind, techs.react],
 		poster: '/projects-images/where-in-the-world/poster.avif',
 		images: [
 			'/projects-images/where-in-the-world/home.avif',
@@ -82,7 +82,7 @@ export default [
 				es: 'Rastrea y obten información basada en una dirección IP o un dominio. Hecho con la API de IP Geolocation y LeafletJS.'
 			}
 		},
-		tech: [
+		techs: [
 			techs.css,
 			techs.javascript,
 			techs.styledComponents,
@@ -110,7 +110,7 @@ export default [
 				es: 'Página web de una empresa bancaria ficticia, hecha con Tailwind y React.'
 			}
 		},
-		tech: [techs.react, techs.tailwind],
+		techs: [techs.react, techs.tailwind],
 		poster: '/projects-images/easybank/poster.avif',
 		images: [
 			'/projects-images/easybank/home-hero-section.avif',

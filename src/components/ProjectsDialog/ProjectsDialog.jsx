@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import projectsJSON from '@/assets/json/projects.json'
+import projectsData from '@/assets/json/projects.js'
 import closeIcon from '@/assets/icons/close.svg'
 import '@/styles/projectsDialog/projectsDialog.css'
 
@@ -10,7 +10,7 @@ import Project from './Project'
 import Slider from './Slider'
 
 export default function ProjectsDialog ({ currentProject, setCurrentProject }) {
-	const orderProjects = orderArray(projectsJSON)
+	const orderProjects = orderArray(projectsData)
 	const { translations } = useLanguage()
 	const dialog = useRef(null)
 
