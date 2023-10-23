@@ -60,7 +60,7 @@ export default function Projects () {
 									{
 										project.repo && (
 											<a href={project.repo} target='_blank' rel='noopener noreferrer'>
-												<img src={repoIcon} alt='repo' />
+												<img src={repoIcon} alt='Repository' />
 												{translations.projects.code}
 											</a>
 										)
@@ -68,7 +68,7 @@ export default function Projects () {
 									{
 										project.live && (
 											<a href={project.live} target='_blank' rel='noopener noreferrer'>
-												<img src={liveIcon} alt='live' />
+												<img src={liveIcon} alt='Go to project' />
 												{translations.projects.live}
 											</a>
 										)

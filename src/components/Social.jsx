@@ -41,10 +41,11 @@ export default function Social () {
 			icon: <InstagramIcon />
 		}
 	]
+	console.log(translations.social.title)
 
 	return (
 		<section className='section social'>
-			<h2 className='hidden'>{translations.social.tile}</h2>
+			<h2 className='hidden'>{translations.social.title}</h2>
 
 			<nav>
 				<ul className='social-container'>

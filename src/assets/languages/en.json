@@ -6,7 +6,7 @@
 	},
 	"about": {
 		"title": "About me",
-		"description": "Self-taught front-end web developer with <span>2 years of experience</span> working and learning from different personal and professional projects. I develop web applications with technologies such as <span>React, Next.js, Tailwind</span>, among others. I speak <span>Spanish and English</span>, and, most importantly,I like coffee ☕."
+		"description": "Self-taught front-end web developer with <span>2 years of experience</span> working and learning from different personal and professional projects. I develop web applications with technologies such as <span>React, Next.js, Tailwind</span>, among others. I speak <span>Spanish and English</span>, and, most importantly, I like coffee ☕."
 	},
 	"settings": {
 		"darkmode": "Dark mode",

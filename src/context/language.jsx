@@ -21,6 +21,7 @@ export const LanguageProvider = ({ children }) => {
 
 	const changeLanguage = newLanguage => {
 		setLanguage(languages.includes(newLanguage) ? newLanguage : 'en')
+		document.documentElement.lang = newLanguage
 	}
 
 	return (

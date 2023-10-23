@@ -18,7 +18,7 @@ export default function Skills () {
 							className='skill tooltip-container'>
 							<img src={`/skills/${skill.name.toLowerCase()}.svg`}
 								className='invert skills_skill'
-								alt={skill.name} />
+								alt='' />
 							<Tooltip class='skill' ariaHidden='true'>{skill.name}</Tooltip>
 						</li>
 					)

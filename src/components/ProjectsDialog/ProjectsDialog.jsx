@@ -32,7 +32,7 @@ export default function ProjectsDialog ({ currentProject, setCurrentProject }) {
 		<dialog className='projects-dialog' onClick={handleCloseOutside} ref={dialog}>
 			<div className='current-project'>
 				<button className='close' onClick={() => handleClose()} title={translations.close} data-sound='switch-off.mp3'>
-					<img src={closeIcon} alt={translations.close} data-sound='switch-off.mp3' />
+					<img src={closeIcon} alt={translations.close} aria-label={translations.close} data-sound='switch-off.mp3' />
 				</button>
 
 				<Images currentProject={currentProject} orderProjects={orderProjects} />
