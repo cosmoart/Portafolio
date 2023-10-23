@@ -33,8 +33,9 @@ export default function Images ({ currentProject, orderProjects }) {
 					orderProjects[currentProject].images && (
 						orderProjects[currentProject].images.map((image, index) => {
 							return <img key={index}
-								src={image} alt={orderProjects[currentProject].name}
+								src={image} alt={`Project ${orderProjects[currentProject].name} preview #${index + 1}`}
 								className='project-image'
+								loading='lazy'
 								id={`project-image-${index}`}
 							/>
 						}
