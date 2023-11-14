@@ -41,7 +41,6 @@ export default function Social () {
 			icon: <InstagramIcon />
 		}
 	]
-	console.log(translations.social.title)
 
 	return (
 		<section className='section social'>

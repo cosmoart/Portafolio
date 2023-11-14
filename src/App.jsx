@@ -19,16 +19,21 @@ export default function App () {
 			playSound('click.wav')
 		}
 
-		window.addEventListener('load', function () {
+		function onLoad () {
 			this.document.querySelectorAll('.loading-page .container > div').forEach(div => {
 				div.style.animation = 'none'
 			})
 			const loadingPage = document.querySelector('.loading-page')
 			if (loadingPage) loadingPage.style.animation = 'loading-pag 1s cubic-bezier(0.53, 0.55, 0.23, 1.07) forwards'
-		})
+		}
 
+		window.addEventListener('load', onLoad)
 		document.addEventListener('click', clickSound)
-		return () => document.removeEventListener('click', clickSound)
+
+		return () => {
+			window.removeEventListener('load', onLoad)
+			document.removeEventListener('click', clickSound)
+		}
 	}, [])
 
 	return (
