@@ -73,17 +73,28 @@
 	},
 	"leaflet": {
 		"name": "LeafletJS",
-		"color": "#199900",
-		"image": false
+		"color": "#199900"
 	},
 	"axios": {
 		"name": "Axios",
-		"color": "#5F9EA0",
-		"image": false
+		"color": "#5A29E4"
 	},
 	"styledComponents": {
 		"name": "Styled Components",
-		"color": "#DB7093",
-		"image": false
+		"color": "#DB7093"
+	},
+	"svelte": {
+		"name": "Svelte",
+		"color": "#FF3E00",
+		"skills": true
+	},
+	"astro": {
+		"name": "Astro",
+		"color": "#BC52EE",
+		"skills": true
+	},
+	"supabase": {
+		"name": "Supabase",
+		"color": "#27b072"
 	}
 }

@@ -1,3 +1,4 @@
+import LoadingScreen from '@/components/LoadingScreen'
 import Settings from '@/components/Settings'
 import Projects from '@/components/Projects'
 import Skills from '@/components/Skills'
@@ -8,7 +9,6 @@ import Logo from '@/components/Logo'
 
 import playSound from '@/utils/play-sound'
 import { useEffect } from 'react'
-import LoadingScreen from './components/LoadingScreen'
 
 export default function App () {
 	console.log('%cHELLO DEV!', 'color: #9d58fd; font-size: 1rem; font-weight: bold; font-family: sans-serif;')
@@ -20,7 +20,7 @@ export default function App () {
 		}
 
 		function onLoad () {
-			this.document.querySelectorAll('.loading-page .container > div').forEach(div => {
+			document.querySelectorAll('.loading-page .container > div').forEach(div => {
 				div.style.animation = 'none'
 			})
 			const loadingPage = document.querySelector('.loading-page')

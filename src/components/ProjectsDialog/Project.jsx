@@ -16,13 +16,14 @@ export default function Project ({ orderProjects, currentProject }) {
 			<p className='project-description'>
 				{orderProjects[currentProject].description.long[language]}
 			</p>
+
 			<ul className='project-technologies'>
 				{orderProjects[currentProject].techs.map((tech, index) => {
 					return <li key={index}
 						className={`project-skill ${tech.contrast ? 'skill-contrast' : ''}`}
 						style={{ backgroundColor: tech.color ?? 'var(--primary-color)' }}>
 						{tech.image !== false &&
-							<img src={`/skills/${tech.name.toLowerCase()}.svg`} alt={tech} />
+							<img src={`/skills/${tech.name.toLowerCase()}.svg`} alt={tech.name + ' icon'} />
 						}
 						{tech.name}
 					</li>

@@ -16,11 +16,57 @@ export default [
 			}
 		},
 		techs: [techs.css, techs.javascript, techs.react],
-		poster: '/projects-images/quizi/poster.svg',
+		poster: '/projects-images/quizi/poster2.svg',
 		images: [
 			'/projects-images/quizi/home.avif',
 			'/projects-images/quizi/play-classic.avif',
 			'/projects-images/quizi/play-infinity.avif'
+		]
+	},
+	{
+		name: 'Freesets',
+		repo: 'https://github.com/cosmoart/Freesets',
+		live: 'https://freesets.vercel.app/',
+		description: {
+			short: {
+				en: 'Collection of free multimedia resources like icons, images, illustrations...',
+				es: 'Colección de recursos gratuitos como iconos, imágenes, ilustraciones...'
+			},
+			long: {
+				en: 'Collection of free resources. Made with Svelte and Tailwind using Supabase for the database and Cloudinary for image storage. With an average of 30 visitors daily and +200 resources.',
+				es: 'Colección de recursos gratuitos. Hecha con Svelte y Tailwind usando Supabase para la base de datos y Cloudinary para el almacenamiento de imágenes. Con una media de 30 visitas diarias y +200 recursos.'
+			}
+		},
+		techs: [techs.svelte, techs.javascript, techs.supabase],
+		poster: '/projects-images/freesets/poster.avif',
+		images: [
+			'/projects-images/freesets/home.avif',
+			'/projects-images/freesets/icons.avif',
+			'/projects-images/freesets/light.avif'
+		]
+	},
+	{
+		name: 'Jobzilla',
+		repo: 'https://github.com/cosmoart/jobzilla',
+		live: 'https://jobzilla.vercel.app/',
+		description: {
+			short: {
+				en: 'Web in Spanish for job and companies search, with filters and maps.',
+				es: 'Buscador de empleos y empresas, con filtros y mapas.'
+			},
+			long: {
+				en: 'Website in Spanish for job and company search, with filters and maps. The data is obtained from the Infojobs API and the map is made with Leaflet and the MapTiler API.',
+				es: 'Página web para la búsqueda de empleos y empresas, con filtros y mapas. Los datos se obtienen de la API de Infojobs y el mapa está hecho con Leaflet y la API de MapTiler.'
+			}
+		},
+		techs: [techs.nextjs, techs.leaflet, techs.tailwind],
+		poster: '/projects-images/jobzilla/poster.avif',
+		images: [
+			'/projects-images/jobzilla/home.avif',
+			'/projects-images/jobzilla/companies.avif',
+			'/projects-images/jobzilla/company.avif',
+			'/projects-images/jobzilla/jobs.avif',
+			'/projects-images/jobzilla/job.avif'
 		]
 	},
 	{
@@ -44,28 +90,6 @@ export default [
 			'/projects-images/space-tourism/destination.avif',
 			'/projects-images/space-tourism/crew.avif',
 			'/projects-images/space-tourism/technology.avif'
-		]
-	},
-	{
-		name: 'Where in the World',
-		repo: 'https://github.com/cosmoart/Where-in-the-world',
-		live: 'https://where-world.vercel.app',
-		description: {
-			short: {
-				en: 'Search and filter information from all countries.',
-				es: 'Busca y filtra información de todos los países.'
-			},
-			long: {
-				en: 'Search and filter information from all countries. Made with Tailwind and React using the REST Countries API.',
-				es: 'Busca y filtra información de todos los países. Hecho con Tailwind y React usando la API de REST Countries.'
-			}
-		},
-		techs: [techs.javascript, techs.tailwind, techs.react],
-		poster: '/projects-images/where-in-the-world/poster.avif',
-		images: [
-			'/projects-images/where-in-the-world/home.avif',
-			'/projects-images/where-in-the-world/home-light.avif',
-			'/projects-images/where-in-the-world/country.avif'
 		]
 	},
 	{
@@ -94,28 +118,6 @@ export default [
 		images: [
 			'/projects-images/ip-address-tracker/home2.avif',
 			'/projects-images/ip-address-tracker/home1.avif'
-		]
-	},
-	{
-		name: 'Easybank',
-		repo: 'https://github.com/cosmoart/Easybank-landing-page',
-		live: 'https://eeasybank.vercel.app',
-		description: {
-			short: {
-				en: 'Landing page of a fictitious banking company.',
-				es: 'Página web de una empresa bancaria ficticia.'
-			},
-			long: {
-				en: 'Landing page of a fictitious banking company, made with Tailwind and React.',
-				es: 'Página web de una empresa bancaria ficticia, hecha con Tailwind y React.'
-			}
-		},
-		techs: [techs.react, techs.tailwind],
-		poster: '/projects-images/easybank/poster.avif',
-		images: [
-			'/projects-images/easybank/home-hero-section.avif',
-			'/projects-images/easybank/home-middle.avif',
-			'/projects-images/easybank/home-footer.avif'
 		]
 	}
 ]
