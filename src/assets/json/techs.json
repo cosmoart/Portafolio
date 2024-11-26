@@ -48,8 +48,7 @@
 	},
 	"bootstrap": {
 		"name": "Bootstrap",
-		"color": "#7952B3",
-		"skills": true
+		"color": "#7952B3"
 	},
 	"sass": {
 		"name": "Sass",
@@ -63,6 +62,11 @@
 	},
 	"express": {
 		"name": "Express",
+		"color": "#000000",
+		"skills": true
+	},
+	"threejs": {
+		"name": "Three.js",
 		"color": "#000000",
 		"skills": true
 	},
@@ -96,5 +100,9 @@
 	"supabase": {
 		"name": "Supabase",
 		"color": "#27b072"
+	},
+	"gsap": {
+		"name": "GSAP",
+		"color": "#88CE02"
 	}
 }

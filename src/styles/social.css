@@ -91,15 +91,15 @@
 		background: var(--bg-color);
 	}
 
-	.social-link:first-child:hover path {
+	.social-container .invert:hover path {
 		fill: var(--dark-text-color);
 	}
 
-	.social-link:first-child:hover img {
+	.social-container .invert:hover img {
 		filter: invert(0);
 	}
 
-	.social-link:first-child:hover a::after {
+	.social-container .invert:hover a::after {
 		background: white;
 	}
 }

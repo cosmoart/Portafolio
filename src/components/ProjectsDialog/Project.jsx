@@ -9,7 +9,7 @@ export default function Project ({ orderProjects, currentProject }) {
 	return (
 		<section>
 			<h3 className='project-title'>
-				<a href={orderProjects[currentProject].live} target='_blank' rel='noopener noreferrer'>
+				<a href={orderProjects[currentProject].live} target='_blank' rel='noopener noreferrer' >
 					{orderProjects[currentProject].name}
 				</a>
 			</h3>

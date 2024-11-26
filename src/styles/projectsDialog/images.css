@@ -7,8 +7,15 @@
 	width: 100%;
 	aspect-ratio: 16/9;
 	border-radius: 0 14px 14px 0;
-	position: relative;
 	overflow: hidden;
+	position: relative;
+}
+
+.project-imgs-container article {
+	width: 100%;
+	height: 100%;
+	overflow: hidden auto;
+	position: relative;
 }
 
 .project-imgs-container button {
@@ -72,7 +79,8 @@
 }
 
 .darkmode .images-slider {
-	background: var(--dark-text-color);
+	background: #1a1924e0;
+	backdrop-filter: blur(2px);
 }
 
 .images-slider li {

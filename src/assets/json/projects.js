@@ -70,6 +70,35 @@ export default [
 		]
 	},
 	{
+		name: 'CodeDev',
+		repo: 'https://github.com/cosmoart/CodeDev',
+		live: 'https://coodedev.netlify.app/',
+		description: {
+			short: {
+				en: 'Track and obtain information based on an IP address or a domain.',
+				es: 'Rastrea y obten información basada en una dirección IP o un dominio.'
+			},
+			long: {
+				en: 'Track and obtain information based on an IP address or a domain. Made with the IPify IP Geolocation API and LeafletJS.',
+				es: 'Rastrea y obten información basada en una dirección IP o un dominio. Hecho con la API de IP Geolocation y LeafletJS.'
+			}
+		},
+		techs: [
+			techs.astro,
+			techs.tailwind,
+			techs.gsap,
+			techs.threejs
+		],
+		poster: '/projects-images/codedev/poster.avif',
+		images: [
+			'/projects-images/codedev/home.avif',
+			'/projects-images/codedev/about.avif',
+			'/projects-images/codedev/projects.avif',
+			'/projects-images/codedev/contact.avif'
+		],
+		scroll: true
+	},
+	{
 		name: 'Space tourism',
 		repo: 'https://github.com/cosmoart/Space-tourism',
 		live: 'https://space-tourist.vercel.app',
@@ -90,34 +119,6 @@ export default [
 			'/projects-images/space-tourism/destination.avif',
 			'/projects-images/space-tourism/crew.avif',
 			'/projects-images/space-tourism/technology.avif'
-		]
-	},
-	{
-		name: 'IP address tracker',
-		repo: 'https://github.com/cosmoart/IP-address-tracker',
-		live: 'https://ip-trackerr.vercel.app',
-		description: {
-			short: {
-				en: 'Track and obtain information based on an IP address or a domain.',
-				es: 'Rastrea y obten información basada en una dirección IP o un dominio.'
-			},
-			long: {
-				en: 'Track and obtain information based on an IP address or a domain. Made with the IPify IP Geolocation API and LeafletJS.',
-				es: 'Rastrea y obten información basada en una dirección IP o un dominio. Hecho con la API de IP Geolocation y LeafletJS.'
-			}
-		},
-		techs: [
-			techs.css,
-			techs.javascript,
-			techs.styledComponents,
-			techs.react,
-			techs.leaflet,
-			techs.axios
-		],
-		poster: '/projects-images/ip-address-tracker/poster.avif',
-		images: [
-			'/projects-images/ip-address-tracker/home2.avif',
-			'/projects-images/ip-address-tracker/home1.avif'
 		]
 	}
 ]

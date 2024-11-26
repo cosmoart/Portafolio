@@ -7,13 +7,10 @@ export default function Images ({ currentProject, orderProjects }) {
 
 	useEffect(() => changueCurrentImg(0), [currentProject])
 
-	useEffect(() => {
-		const handleWheel = (e) => changueCurrentImg(currentImg + (e.deltaY > 0 ? 1 : -1))
-
-		document.querySelector('.project-imgs-container')
-			.addEventListener('wheel', handleWheel, { passive: false })
-		return () => document.querySelector('.images-slider')
-	}, [currentImg])
+	function handleWheel (e) {
+		if (orderProjects[currentProject].scroll) return
+		changueCurrentImg(currentImg + (e.deltaY > 0 ? 1 : -1))
+	}
 
 	function changueCurrentImg (number) {
 		if (number > orderProjects[currentProject].images.length - 1 || number < 0) return
@@ -28,20 +25,23 @@ export default function Images ({ currentProject, orderProjects }) {
 
 	return (
 		<section>
-			<div className='project-imgs-container'>
-				{
-					orderProjects[currentProject].images && (
-						orderProjects[currentProject].images.map((image, index) => {
-							return <img key={index}
-								src={image} alt={`Project ${orderProjects[currentProject].name} preview #${index + 1}`}
-								className='project-image'
-								loading='lazy'
-								id={`project-image-${index}`}
-							/>
-						}
+			<div className='project-imgs-container' onWheel={handleWheel}>
+				<article>
+					{
+						orderProjects[currentProject].images && (
+							orderProjects[currentProject].images.map((image, index) => {
+								return <img key={index}
+									src={image} alt={`Project ${orderProjects[currentProject].name} preview #${index + 1}`}
+									className='project-image'
+									loading='lazy'
+									id={`project-image-${index}`}
+								/>
+							}
+							)
 						)
-					)
-				}
+					}
+				</article>
+
 				<button onClick={() => changueCurrentImg(currentImg - 1)} disabled={currentImg < 1} className='prev-img'>
 					<img src={arrowIcon} alt='arrow' className='arrow-left' />
 				</button>
