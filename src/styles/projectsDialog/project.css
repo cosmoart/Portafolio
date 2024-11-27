@@ -66,8 +66,7 @@
 	width: 1rem;
 }
 
-.project-links img,
-.project-skill img {
+.project-links img {
 	filter: invert(1);
 }
 

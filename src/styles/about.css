@@ -10,7 +10,8 @@
 
 .about p {
 	font-weight: 400;
-	text-wrap: balance;
+	line-height: 140%;
+	text-wrap: pretty;
 	margin: 0;
 	color: var(--dark-text-color);
 }
@@ -33,7 +34,7 @@
 	.about h2,
 	.about p {
 		max-width: 40rem;
-		margin: auto;
+		margin-inline: auto;
 		width: 100%;
 	}
 }

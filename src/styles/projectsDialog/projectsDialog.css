@@ -101,7 +101,7 @@
 }
 
 .skill-contrast img {
-	filter: invert(0) !important;
+	filter: invert(1) !important;
 }
 
 .projects-dialog .close {
