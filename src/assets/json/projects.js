@@ -101,7 +101,7 @@ export default [
 	{
 		name: 'Space tourism',
 		repo: 'https://github.com/cosmoart/Space-tourism',
-		live: 'https://space-tourist.vercel.app',
+		live: 'https://space-tourists.netlify.app',
 		description: {
 			short: {
 				en: 'Landing page for a fictional space travel company.',
