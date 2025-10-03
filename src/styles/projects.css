@@ -287,7 +287,8 @@
 	}
 
 	.project:hover {
-		scale: 1.04;
+		/* scale: 1.04; */
+		translate: 0 -3px;
 	}
 
 	.project:hover .project-viewmore {

@@ -24,10 +24,13 @@ export default function App () {
 				div.style.animation = 'none'
 			})
 			const loadingPage = document.querySelector('.loading-page')
+
 			if (loadingPage) loadingPage.style.animation = 'loading-pag 1s cubic-bezier(0.53, 0.55, 0.23, 1.07) forwards'
 		}
 
-		window.addEventListener('load', onLoad)
+		if (document.readyState === 'complete') onLoad()
+		else window.addEventListener('load', onLoad)
+
 		document.addEventListener('click', clickSound)
 
 		return () => {
